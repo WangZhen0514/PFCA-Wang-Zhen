@@ -30,7 +30,3 @@ data_group3.rename(columns={'brand':'品牌名', 'id_x':'投诉次数', 'id_y':'
 data_sort3 = data_group3.sort_values(by='平均车型投诉数', ascending=False)
 data_sort3['排名'] = data_sort3['平均车型投诉数'].rank(ascending=False, method='min')
 print(data_sort3)
-
-data_sort1.to_excel('D:/OneDrive - 上汽大众汽车有限公司/2021年度/Exercise/car_complain_sort1.xlsx', index=False)
-data_sort2.to_excel('D:/OneDrive - 上汽大众汽车有限公司/2021年度/Exercise/car_complain_sort2.xlsx', index=False)
-data_sort3.to_excel('D:/OneDrive - 上汽大众汽车有限公司/2021年度/Exercise/car_complain_sort3.xlsx', index=False)
