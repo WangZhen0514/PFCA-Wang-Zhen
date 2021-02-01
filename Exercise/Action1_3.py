@@ -52,37 +52,3 @@ model_count.rename(columns={'brand':'品牌名', 'car_model':'车型名', 'id_x'
 model_count = model_count.sort_values(['平均车型投诉数'], ascending=False)
 model_count['排名'] = model_count['平均车型投诉数'].rank(ascending=False)
 print(model_count)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
